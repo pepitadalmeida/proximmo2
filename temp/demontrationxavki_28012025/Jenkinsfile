@@ -1,0 +1,14 @@
+ node {
+     stage('clone') {
+          git 'git clone https://gitlab.com/midogopep/demontrationxavki_28012025.git'
+	         
+		      }
+		           stage('Build') {
+			         sh label: '', script: 'javac Main.java'
+				      }
+				           
+					        stage('Run') {
+						       sh label: '', script: 'Main.java'
+						            }
+							       }
+
